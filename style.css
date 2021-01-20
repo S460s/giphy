@@ -1,0 +1,32 @@
+:root {
+	--imgWidth: 50vw;
+	--maxImgWidth: 600px;
+	--imgHeight: 30vh;
+	--marginTop: 20px;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	text-align: center;
+}
+
+#giphy {
+	width: var(--imgWidth);
+	max-width: var(--maxImgWidth);
+	height: var(--imgHeight);
+	max-height: 300px;
+}
+#giphyForm {
+	width: calc(var(--imgWidth) - 10vw);
+	max-width: calc(var(--maxImgWidth) - 100px);
+	height: 30px;
+	margin-top: var(--marginTop);
+}
+#newGiphyBtn {
+	width: calc(var(--imgWidth) - 20vw);
+	height: 30px;
+	margin-top: var(--marginTop);
+}
