@@ -1,5 +1,3 @@
-const API_KEY = 'CtWKWgDFEoAZdObMpNzJngDXDmiTvo4q';
-
 const UI = (function () {
 	const img = document.getElementById('giphy');
 	const newGiphyBtn = document.getElementById('newGiphyBtn');
@@ -34,7 +32,7 @@ const UI = (function () {
 
 async function showGiphy(topic) {
 	const response = await fetch(
-		`https://api.giphy.com/v1/gifs/translate?api_key=${API_KEY}&s=${topic}`,
+		`https://api.giphy.com/v1/gifs/translate?api_key=${process.env.API_KEY}&s=${topic}`,
 		{ mode: 'cors' }
 	);
 	try {
