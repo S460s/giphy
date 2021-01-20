@@ -45,7 +45,6 @@ async function showGiphy(topic) {
 		UI.showErrMsg();
 	}
 }
-
 showGiphy('cats');
 UI.newGiphyEvent();
 
